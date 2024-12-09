@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Stock and Crypto Analyzer</title>
+  <style>
+      body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f9;
+      }
+      .container {
+          text-align: center;
+          background: #ffffff;
+          padding: 20px 30px;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          max-width: 800px;
+          line-height: 1.6;
+      }
+      h1 {
+          margin-bottom: 20px;
+          font-size: 24px;
+          color: #333;
+      }
+      p {
+          font-size: 16px;
+          color: #555;
+          margin-bottom: 30px;
+          text-align: justify;
+      }
+      form {
+          margin-top: 20px;
+      }
+      input[type="text"] {
+          padding: 10px;
+          width: 250px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin-bottom: 15px;
+      }
+      button {
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+      button:hover {
+          background-color: #0056b3;
+      }
+      label {
+          font-size: 14px;
+          color: #555;
+          display: block;
+          margin-bottom: 5px;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+      <h1>Asset Analyst</h1>
+      <p>
+          Analyze the performance of stocks and cryptocurrencies with real-time data, forecasts, and technical indicators.
+          This application leverages advanced machine learning, including LSTM (Long Short-Term Memory) models, which are designed
+          to process sequential data and identify patterns over time. By analyzing historical price data and trends, the LSTM
+          model predicts future movements with a focus on temporal relationships. This is not financial advice.
+      </p>
+      <form action="/analyze" method="POST">
+          <label for="ticker">Enter a Stock or Crypto Ticker:</label>
+          <input type="text" id="ticker" name="ticker" placeholder="e.g., AAPL or BTC-USD" required>
+          <button type="submit">Analyze</button>
+      </form>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
