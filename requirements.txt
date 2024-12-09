@@ -113,7 +113,6 @@ soupsieve==2.6
 sqlparse==0.5.1
 stack-data==0.6.3
 streamlit==1.40.1
-ta-lib==0.5.1
 tenacity==9.0.0
 tensorboard==2.18.0
 tensorboard-data-server==0.7.2
@@ -133,3 +132,4 @@ wheel==0.45.1
 wrapt==1.17.0
 yarl==1.10.0
 yfinance==0.2.43
+uvicorn
